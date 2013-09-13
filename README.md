@@ -18,12 +18,44 @@ Download latest fancymap.js and include it into your page:
 
 API
 =======
->[xxx](#xxx),
->[xxx](#xxx)
+
+### Define a dependence defination and then load them:
+
+        jsrequire.define({
+                 paths: {
+                        'step1':'step1.js'
+                        ,'step2':'step2.js'
+                        ,'step3':'step3.js'
+                        ,'step4':'step4.js'
+                        ,'step5':'step5.js'
+                }
+                ,wait: {
+                        'step5': ['step4']
+                        ,'step4': ['step2', 'step3']
+                        ,'step2': ['step1']
+                }
+                ,css: [
+                        'stylesheet1.css'
+                        ,'stylesheet2.css'
+                        ,'stylesheet3.css'
+                ]
+        });
+        jsrequire.ready(['step5'], function (){
+        	console.debug('done!');
+        });
 
 
-### put()<span id="xxx"></span>
-xxx.
+### Define and load javascript and stylesheet files:
 
-    var xxx = new FancyMap();
-    
+
+        jsrequire.load('script1.js');
+        jsrequire.load('script2.js');
+        jsrequire.load('script3.js');
+        //
+        jsrequire.load('stylesheet1.css');
+        jsrequire.load('stylesheet2.css');
+        jsrequire.load('stylesheet3.css');
+        
+        jsrequire.ready(function (){
+        	console.debug('done!');
+        });
