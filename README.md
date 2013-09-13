@@ -1,6 +1,6 @@
 About
 =======
-JsRequire is a light file loading util writen by javascript, BTW, requireJs sucks, try this one.
+JsRequire is a light file loading util writen by javascript, and BTW, requireJs sucks, try this one and enjoy.
 
 Browser Support: IE6+, FireFox, Chrome, Opera, Safari and more.
 
