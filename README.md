@@ -22,14 +22,14 @@ API
 ### Define a dependence defination and then load them:
 
         jsrequire.define({
-                 paths: {
+                 script: {
                         'step1':'step1.js'
                         ,'step2':'step2.js'
                         ,'step3':'step3.js'
                         ,'step4':'step4.js'
                         ,'step5':'step5.js'
                 }
-                ,wait: {
+                ,dependents: {
                         'step5': ['step4']
                         ,'step4': ['step2', 'step3']
                         ,'step2': ['step1']
