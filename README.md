@@ -45,7 +45,7 @@ API
         });
 
 
-### Define and load javascript and stylesheet files:
+### another simple way:
 
 
         jsrequire.load('script1.js');
