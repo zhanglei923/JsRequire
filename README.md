@@ -1,6 +1,6 @@
 About
 =======
-JsRequire is a light js/css loading utility forcus on pure file loading and dependencies.
+JsRequire is a simple agilor js/css loading utility forcus on pure file loading and dependencies.
 
 Browser Support: IE6+, FireFox, Chrome, Opera, Safari and more.
 
