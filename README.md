@@ -59,3 +59,9 @@ API
         jsrequire.ready(function (){
         	console.debug('done!');
         });
+        
+### or event the jquery looking way:
+
+        jsrequire.load('a.js').load('b.js').load('c.js').load('d.js').ready(function (){
+        	console.debug('done!');
+        });
