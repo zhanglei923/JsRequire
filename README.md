@@ -1,6 +1,6 @@
 About
 =======
-JsRequire is a simple agilor js/css loading utility forcus on pure file loading and dependencies.
+JsRequire is a agilor js dependent loading util.
 
 Browser Support: IE6+, FireFox, Chrome, Opera, Safari and more.
 
@@ -11,7 +11,7 @@ MIT: [http://www.opensource.org/licenses/mit-license.php](http://www.opensource.
 
 How to use:
 =======
-Download latest fancymap.js and include it into your page:
+Download and include into your page:
 
         <script src="/jsrequire-latest.min.js"></script>
 
@@ -19,7 +19,7 @@ Download latest fancymap.js and include it into your page:
 API
 =======
 
-### Define a dependence defination and then load them:
+### Define dependence defination and load them:
 
         jsrequire.define({
                  script: {
@@ -45,7 +45,7 @@ API
         });
 
 
-### another simple way:
+### another way:
 
 
         jsrequire.load('script1.js');
@@ -60,7 +60,7 @@ API
         	console.debug('done!');
         });
         
-### or event the jquery looking way:
+### or you can do it like this:
 
         jsrequire.load('a.js').load('b.js').load('c.js').load('d.js').ready(function (){
         	console.debug('done!');
